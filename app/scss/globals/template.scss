@@ -1,0 +1,81 @@
+@use '../base/' as *;
+@use '../util' as *;
+
+.template {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+     'one'
+     'two'
+     'three'
+    ;
+    gap: 2rem;
+
+    padding-block: rem(56) rem(230);
+    padding-inline: rem(24);
+    
+    @include breakpoint(medium) {
+        padding-block: rem(56) rem(400);
+        padding-inline: rem(50);
+    }
+
+    &__card {
+        flex-flow: column nowrap;
+        
+        border-radius: rem(15);
+        box-shadow: 0 8px 30px rgba(193,200,209,.477);
+        
+        padding-block: rem(52);
+        padding-inline: rem(46);
+        
+        text-align: center;
+        
+        @include breakpoint(medium) {
+            flex-flow: row-reverse nowrap;
+            gap: 4rem;
+
+            text-align: left;
+
+            padding-left: rem(145);
+
+            &:nth-of-type(2) {
+                flex-flow: row nowrap;
+            }
+        }
+    }
+
+    &__hero {
+        margin-bottom: rem(66);
+        
+        @include breakpoint(medium) {
+            max-width: 45%;
+            
+            margin: 0;
+        }
+    }
+    
+    &__box {
+
+        @include breakpoint-down(small) {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        flex: 1 1 50%;
+    }
+
+    &__heading {
+        font-size: min(max(1.25rem, 2vw), 2.5rem);
+
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: rem(15.5);
+
+        @include breakpoint(medium) {
+            font-size: 1rem;
+        }
+    }
+}

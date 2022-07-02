@@ -1,0 +1,16 @@
+@use '../base/' as *;
+@use '../util' as *;
+
+.social {
+    font-size: rem(14);
+
+    border-radius: 50%;
+    border: 1px solid #fff;
+
+    width: 1.875rem;
+    height: 1.875rem;
+
+    color: #fff;
+        
+    margin: 0 0.5rem;
+}

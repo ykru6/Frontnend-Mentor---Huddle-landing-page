@@ -1,0 +1,12 @@
+@use '../util' as *;
+
+.bg-wrapper {
+	background-image: url(/app/asset/images/bg-hero-mobile.svg);
+	background-repeat: no-repeat;
+	background-color: $bg;
+	background-size: cover;
+
+	@include breakpoint(medium) {
+		background-image: url(/app/asset/images/bg-hero-desktop.svg);
+	}
+}

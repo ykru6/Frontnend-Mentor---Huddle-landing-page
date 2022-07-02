@@ -1,0 +1,142 @@
+@use '../base/' as *;
+@use '../util' as *;
+
+.footer {
+    padding-block: rem(140);
+    padding-inline: rem(15);
+
+    background-color: clr(neutral, dark-cyan);
+    color: white;
+
+    @include breakpoint(medium) {
+        padding-inline: rem(80);
+        padding-block: rem(140) 0;
+
+    }
+
+    &__logo {
+        display: block;
+
+        path {
+            fill: clr(neutral, pale-cyan);
+        }
+
+        @include breakpoint(medium) {
+            margin-bottom: rem(45);
+        }
+    }
+
+    &__content {
+        flex-flow: column nowrap;
+
+        @include breakpoint(medium) {
+            font-size: rem(16);
+
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            gap: 7rem;
+        }
+    }
+
+    &__contact {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        gap: rem(10);
+
+        padding: 0;
+        margin-top: rem(40);
+        margin-bottom: rem(60);
+
+        p, img {
+            display: inline;
+        }
+
+        img {
+            margin-right: rem(25);
+        }
+
+        @include breakpoint(medium) {
+            flex: 1 1 33%;
+
+            margin: 0;
+        }
+    }
+
+    &__links {
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        gap: 2rem;
+
+        @include breakpoint(medium) {
+            flex: 1 1 33%;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            gap: 14rem;
+        }
+    }
+
+    &__box {
+        flex: 1 1 50%;
+        flex-flow: column nowrap;
+        align-self: flex-start;
+        gap: rem(8);
+
+        a {
+            color: white;
+
+            transition: all 350ms ease-in-out;
+        
+            &:hover {
+                color: clr(primary, pink);
+            }
+        }
+    }
+
+    &__socials {
+        margin-block: rem(52);
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            transition: all 350ms ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+
+                border: 1px solid clr(primary, pink);
+                color: clr(primary, pink);
+            }
+        }
+
+        @include breakpoint(medium) {
+            flex: 1 1 33%;
+            
+            margin-top: 0;
+        }
+    }
+
+    &__credit {
+        font-size: rem(12);
+
+        text-align: center;
+
+        margin-top: 2rem;
+
+        a {
+            color: clr(primary, pink);
+
+            border-bottom: 1px solid clr(primary, pink);
+
+            transition: all 350ms ease-in-out;
+
+            &:hover {
+                color: $ctaHover;
+
+                border-bottom: 1px solid $ctaHover;
+            }
+        }
+    }
+}

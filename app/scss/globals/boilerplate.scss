@@ -1,0 +1,21 @@
+@use '../base/' as *;
+@use '../util/' as *;
+
+html {
+	font-size: rem(18);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: $f-reg;
+	
+	margin: 0;
+	padding: 0;
+}

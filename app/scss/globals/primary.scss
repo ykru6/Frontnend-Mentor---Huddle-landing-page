@@ -1,0 +1,68 @@
+@use '../base/' as *;
+@use '../util' as *;
+
+.primary {
+    flex-flow: column nowrap;
+    gap: 1.65rem;
+
+    text-align: center;
+    
+    padding-inline: rem(16);
+    padding-bottom: rem(48);
+
+    @include breakpoint(medium) {
+        flex-flow: row nowrap;
+
+        text-align: left;
+
+        padding-inline: rem(50);
+        padding-bottom: 68px;
+        
+    }
+
+    &__container {
+        flex: 1 1 50%;
+
+        @include breakpoint(medium) {
+
+            h1, p {
+                padding: 0;
+            }
+
+            h1 {
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &__heading {
+        font-size: min(max(1.52rem, 4vw), 3.5rem);
+
+        padding-inline: rem(44);
+
+        line-height: 1.6;
+    }
+
+    &__subtitle {
+        padding-inline: rem(24);
+        margin-block: rem(20) rem(35);
+    }
+
+    &__cta {
+        margin-bottom: rem(56);
+    }
+
+    &__hero {
+        flex: 1 1 50%;
+        
+        padding-inline: rem(10);
+
+        img {
+            width: 100%;
+
+            @include breakpoint(medium) {
+                max-width: rem(950);
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use '../base/' as *;
+@use '../util' as *;
+
+.cta {
+    font-weight: $f-semibold;
+    font-size: rem(14);
+
+    width: rem(275);
+
+    border-radius: 100px;
+    background-color: clr(primary,pink);
+    box-shadow: 0 8px 30px rgba(152, 157, 164, 0.477);
+    border: 0 solid none;
+
+    color: white;
+
+    padding: 0.925em;
+
+    transition: all 250ms;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $ctaHover;
+    }
+
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @include breakpoint(medium) {
+        font-size: rem(16);
+        
+        padding: 1.05rem;
+    }
+}

@@ -1,0 +1,22 @@
+@use 'fonts' as *;
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	line-height: 1.1;
+
+	font-family: 'Poppins', sans-serif;
+	font-weight: $f-semibold;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+//    font-family: 'Open Sans', sans-serif;
+
+// font-family: 'Poppins', sans-serif;
