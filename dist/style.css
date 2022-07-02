@@ -102,7 +102,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .bg-wrapper {
         background-image: url(/app/asset/images/bg-hero-desktop.svg);
     }
@@ -113,7 +113,7 @@ body {
     padding-block: 7.7777777778rem;
     padding-inline: 0.8333333333rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer {
         padding-block: 7.7777777778rem 0;
         padding-inline: 4.4444444444rem;
@@ -125,7 +125,7 @@ body {
 .footer__logo path {
     fill: #ebfbff;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer__logo {
         margin-bottom: 2.5rem;
     }
@@ -133,7 +133,7 @@ body {
 .footer__content {
     flex-flow: column nowrap;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer__content {
         align-items: flex-start;
         flex-flow: row nowrap;
@@ -156,7 +156,7 @@ body {
 .footer__contact img {
     margin-right: 1.3888888889rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer__contact {
         flex: 1 1 33%;
         margin: 0;
@@ -167,7 +167,7 @@ body {
     gap: 2rem;
     justify-content: space-around;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer__links {
         align-items: flex-end;
         flex: 1 1 33%;
@@ -203,7 +203,7 @@ body {
     color: #ff52bf;
     cursor: pointer;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .footer__socials {
         flex: 1 1 33%;
         margin-top: 0;
@@ -228,7 +228,7 @@ body {
     padding-block: 1.4444444444rem;
     padding-inline: 0.8888888889rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .header {
         padding-block: 3.0555555556rem;
         padding-inline: 4.1666666667rem;
@@ -241,7 +241,7 @@ body {
     height: 1rem;
     width: 5.8888888889rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .header__logo img {
         height: 2.2222222222rem;
         width: 13.8888888889rem;
@@ -267,7 +267,7 @@ body {
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .header__cta {
         font-size: 0.8888888889rem;
         padding: 0.8888888889em;
@@ -281,7 +281,7 @@ body {
     padding-inline: 0.8888888889rem;
     text-align: center;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .primary {
         flex-flow: row nowrap;
         padding-bottom: 68px;
@@ -292,7 +292,7 @@ body {
 .primary__container {
     flex: 1 1 50%;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .primary__container h1,
     .primary__container p {
         padding: 0;
@@ -320,7 +320,7 @@ body {
 .primary__hero img {
     width: 100%;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .primary__hero img {
         max-width: 52.7777777778rem;
     }
@@ -333,7 +333,7 @@ body {
     padding-block: 3.1111111111rem 12.7777777778rem;
     padding-inline: 1.3333333333rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .template {
         padding-block: 3.1111111111rem 22.2222222222rem;
         padding-inline: 2.7777777778rem;
@@ -347,7 +347,7 @@ body {
     padding-inline: 2.5555555556rem;
     text-align: center;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .template__card {
         flex-flow: row-reverse nowrap;
         gap: 4rem;
@@ -361,7 +361,7 @@ body {
 .template__hero {
     margin-bottom: 3.6666666667rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .template__hero {
         margin: 0;
         max-width: 45%;
@@ -370,7 +370,7 @@ body {
 .template__box {
     flex: 1 1 50%;
 }
-@media (max-width: 49.544em) {
+@media (max-width: 39.9375em) {
     .template__box {
         align-items: center;
         display: flex;
@@ -384,7 +384,7 @@ body {
 .template__text {
     font-size: 0.8611111111rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .template__text {
         font-size: 1rem;
     }
@@ -410,7 +410,7 @@ body {
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .cta {
         font-size: 0.8888888889rem;
         padding: 1.05rem;
@@ -429,7 +429,7 @@ body {
     text-align: center;
     width: 22.2222222222rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .component {
         bottom: -5.5555555556rem;
         height: 16.6666666667rem;
@@ -441,7 +441,7 @@ body {
     font-size: 1rem;
     margin-bottom: 1.5555555556rem;
 }
-@media (min-width: 50.5556) {
+@media (min-width: 40em) {
     .component__heading {
         font-size: min(max(1.25rem, 2vw), 2.5rem);
         margin-bottom: 3rem;
@@ -457,4 +457,3 @@ body {
     width: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */
-
